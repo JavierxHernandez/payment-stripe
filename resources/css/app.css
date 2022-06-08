@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import "buttons.css";
+@import "cards.css";
+@import "container.css";
+@import "forms.css";
+@import "spinner.css";
