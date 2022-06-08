@@ -131,4 +131,25 @@
     </body>
 </html> --}}
 
-<x-app-layout />
+<x-app-layout>
+    <div class="container py-10">
+        <div class="grid grid-cols-3 gap-6">
+            @foreach ($services as $service)
+                <div class="card">
+                    <div class="px-4 py-2 bg-gray-900 flex justify-between items-center">
+                        <p class="text-gray-200 font-bold text-xl">{{ $service->price }}$</p>
+                        <a href="" class="btn btn-secondary">Buy</a>
+                    </div>
+                    <img class="h-56 w-full object-cover" src="{{ Storage::url($service->image) }}" alt="">
+                    <div class="card-body">
+                        <h1 class="text-gray-900 font-bold text-xl uppercase">{{ $service->title }}</h1>
+                        <p class="text-gray-600 text-sm mt-1">{{ Str::limit($service->description, 50) }}</p>
+                    </div>
+                </div>
+            @endforeach
+        </div>
+        <div class="mt-6">
+            {{ $services->links() }}
+        </div>
+    </div>
+</x-app-layout>

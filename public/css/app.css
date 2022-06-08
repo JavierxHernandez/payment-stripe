@@ -599,6 +599,39 @@ select {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
+.container {
+  width: 100%;
+}
+@media (min-width: 640px) {
+
+  .container {
+    max-width: 640px;
+  }
+}
+@media (min-width: 768px) {
+
+  .container {
+    max-width: 768px;
+  }
+}
+@media (min-width: 1024px) {
+
+  .container {
+    max-width: 1024px;
+  }
+}
+@media (min-width: 1280px) {
+
+  .container {
+    max-width: 1280px;
+  }
+}
+@media (min-width: 1536px) {
+
+  .container {
+    max-width: 1536px;
+  }
+}
 .prose {
   color: var(--tw-prose-body);
   max-width: 65ch;
@@ -1042,6 +1075,9 @@ select {
 .mb-4 {
   margin-bottom: 1rem;
 }
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
 .-mt-px {
   margin-top: -1px;
 }
@@ -1089,6 +1125,12 @@ select {
 }
 .h-20 {
   height: 5rem;
+}
+.h-56 {
+  height: 14rem;
+}
+.h-72 {
+  height: 18rem;
 }
 .min-h-screen {
   min-height: 100vh;
@@ -1150,6 +1192,9 @@ select {
 .max-w-xl {
   max-width: 36rem;
 }
+.max-w-5xl {
+  max-width: 64rem;
+}
 .max-w-6xl {
   max-width: 72rem;
 }
@@ -1206,6 +1251,9 @@ select {
 }
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 .flex-row {
   flex-direction: row;
@@ -1312,6 +1360,9 @@ select {
 .border-b {
   border-bottom-width: 1px;
 }
+.border-r {
+  border-right-width: 1px;
+}
 .border-gray-300 {
   --tw-border-opacity: 1;
   border-color: rgb(209 213 219 / var(--tw-border-opacity));
@@ -1330,6 +1381,10 @@ select {
 .border-gray-100 {
   --tw-border-opacity: 1;
   border-color: rgb(243 244 246 / var(--tw-border-opacity));
+}
+.border-gray-400 {
+  --tw-border-opacity: 1;
+  border-color: rgb(156 163 175 / var(--tw-border-opacity));
 }
 .bg-white {
   --tw-bg-opacity: 1;
@@ -1379,6 +1434,10 @@ select {
   --tw-bg-opacity: 1;
   background-color: rgb(229 231 235 / var(--tw-bg-opacity));
 }
+.bg-gray-900 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(17 24 39 / var(--tw-bg-opacity));
+}
 .bg-opacity-25 {
   --tw-bg-opacity: 0.25;
 }
@@ -1394,6 +1453,10 @@ select {
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
+}
+.object-center {
+  -o-object-position: center;
+     object-position: center;
 }
 .p-2 {
   padding: 0.5rem;
@@ -1535,6 +1598,9 @@ select {
 .font-semibold {
   font-weight: 600;
 }
+.font-bold {
+  font-weight: 700;
+}
 .uppercase {
   text-transform: uppercase;
 }
@@ -1552,6 +1618,9 @@ select {
 }
 .tracking-widest {
   letter-spacing: 0.1em;
+}
+.tracking-wider {
+  letter-spacing: 0.05em;
 }
 .text-gray-500 {
   --tw-text-opacity: 1;

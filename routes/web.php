@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\ArticleController;
+use App\Http\Controllers\ServiceController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,9 +15,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-})->name('home');
+// Route::get('/', function () {
+//     return view('welcome');
+// })->name('home');
+
+Route::get('/', [ServiceController::class, 'index'])->name('home');
 
 Route::middleware([
     'auth:sanctum',
@@ -26,3 +30,8 @@ Route::middleware([
         return view('dashboard');
     })->name('dashboard');
 });
+
+Route::get('articles', [ArticleController::class, 'index'])->name('articles.index');
+Route::get('articles/{article}', [ArticleController::class, 'show'])->name('articles.show');
+
+

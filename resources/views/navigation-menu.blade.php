@@ -5,6 +5,11 @@ $nav_links = [
         'route' => route('home'),
         'active' => request()->routeIs('home'),
     ],
+    [
+        'name' => 'Articles',
+        'route' => route('articles.index'),
+        'active' => request()->routeIs('articles.index'),
+    ],
 ];
 @endphp
 
