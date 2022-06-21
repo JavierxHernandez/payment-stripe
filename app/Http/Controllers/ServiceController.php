@@ -14,4 +14,9 @@ class ServiceController extends Controller
 
         return view('welcome', compact('services'));
     }
+
+    public function pay(Service $service)
+    {
+        return view('services.pay', compact('service'));
+    }
 }

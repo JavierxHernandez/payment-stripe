@@ -138,7 +138,7 @@
                 <div class="card">
                     <div class="px-4 py-2 bg-gray-900 flex justify-between items-center">
                         <p class="text-gray-200 font-bold text-xl">{{ $service->price }}$</p>
-                        <a href="" class="btn btn-secondary">Buy</a>
+                        <a href="{{ route('services.pay', $service) }}" class="btn btn-secondary">Buy</a>
                     </div>
                     <img class="h-56 w-full object-cover" src="{{ Storage::url($service->image) }}" alt="">
                     <div class="card-body">
